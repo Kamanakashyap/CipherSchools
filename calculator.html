@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display">
+        <div class="button-container">
+            <button class="button" onclick="curreytDisplay='';
+            document.querySelector('#display').value=curreytDisplay;">C</button>
+            <button class="button"onclick="curreytDisplay= curreytDisplay+'1';
+            document.querySelector('#display').value=curreytDisplay;">1</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'2';
+            document.querySelector('#display').value=curreytDisplay;">2</button>
+            <button class="button"onclick="curreytDisplay= curreytDisplay+'+';
+            document.querySelector('#display').value=curreytDisplay;">+</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'3';
+            document.querySelector('#display').value=curreytDisplay;">3</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'4';
+            document.querySelector('#display').value=curreytDisplay;">4</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'-';
+            document.querySelector('#display').value=curreytDisplay;">-</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'5';
+            document.querySelector('#display').value=curreytDisplay;">5</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'6';
+            document.querySelector('#display').value=curreytDisplay;">6</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'*';
+            document.querySelector('#display').value=curreytDisplay;">*</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'7';
+            document.querySelector('#display').value=curreytDisplay;">7</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'8';
+            document.querySelector('#display').value=curreytDisplay;">8</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'/';
+            document.querySelector('#display').value=curreytDisplay;">/</button>
+            <button class="button" onclick="curreytDisplay=eval(curreytDisplay);
+            document.querySelector('#display').value=curreytDisplay;">=</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'9';
+            document.querySelector('#display').value=curreytDisplay;">9</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'0';
+            document.querySelector('#display').value=curreytDisplay;">0</button>
+            <button class="button" onclick="curreytDisplay= curreytDisplay+'.';
+            document.querySelector('#display').value=curreytDisplay;">.</button>
+
+        </div>
+
+    </div>
+    <script>
+        let curreytDisplay='';
+        document.querySelector('#display').value=curreytDisplay;
+    </script>
+</body>
+</html>
